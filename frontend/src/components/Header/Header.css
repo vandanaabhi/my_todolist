@@ -1,0 +1,192 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 72px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 28px;
+
+  background: #ffffff;
+
+  border-bottom: 1px solid #e5e7eb;
+
+  z-index: 1000;
+}
+
+/* Left */
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-logo {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 9px;
+
+  background: #635bff;
+  color: white;
+
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.brand-text strong {
+  font-size: 15px;
+  color: #111827;
+}
+
+.brand-text span {
+  font-size: 11px;
+  color: #9ca3af;
+}
+
+/* Right */
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.notification-button {
+  position: relative;
+
+  width: 38px;
+  height: 38px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #f3f4f6;
+
+  font-size: 16px;
+}
+
+.notification-dot {
+  position: absolute;
+
+  top: 7px;
+  right: 7px;
+
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #ef4444;
+
+  border: 2px solid white;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-avatar {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #e5e7eb;
+
+  color: #374151;
+
+  font-weight: 700;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.profile-info strong {
+  font-size: 13px;
+  color: #111827;
+}
+
+.profile-info span {
+  font-size: 11px;
+  color: #9ca3af;
+}
+
+.profile-arrow {
+  border: none;
+  background: transparent;
+
+  color: #9ca3af;
+
+  font-size: 9px;
+}
+
+/* Mobile menu */
+
+.mobile-menu-button {
+  display: none;
+
+  width: 38px;
+  height: 38px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #f3f4f6;
+
+  font-size: 20px;
+}
+
+/* Responsive */
+
+@media (max-width: 700px) {
+
+  .header {
+    padding: 0 16px;
+  }
+
+  .mobile-menu-button {
+    display: block;
+  }
+
+  .profile-info,
+  .profile-arrow {
+    display: none;
+  }
+
+  .header-right {
+    gap: 10px;
+  }
+
+}
